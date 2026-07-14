@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Матвей red1s</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 25px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        
+        h1 {
+            font-size: 26px;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+            border-bottom: 4px solid #4A90E2;
+            padding-bottom: 15px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #4A90E2;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 22px;
+            color: #1a1a2e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        a {
+            display: inline-block;
+            background: #4A90E2;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+            margin-top: 5px;
+        }
+        
+        a:hover {
+            background: #357ABD;
+        }
+        
+        .address-block {
+            background: #f0f4f8;
+            padding: 12px 18px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        
+        /* Виджет погоды через Яндекс.Карты */
+        .weather-iframe {
+            width: 100%;
+            height: 350px;
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            margin: 10px 0 5px 0;
+        }
+        
+        .weather-credit {
+            text-align: center;
+            font-size: 13px;
+            color: #999;
+            margin-top: 5px;
+        }
+        
+        .weather-credit a {
+            background: none;
+            color: #4A90E2;
+            padding: 0;
+            font-weight: normal;
+            text-decoration: underline;
+        }
+        
+        .weather-credit a:hover {
+            background: none;
+            color: #357ABD;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .weather-iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Бебекин Максим Михайлович</h1>
+        <div class="subtitle">Генеральный директор лифтовой компании ООО «ЛифтСтандарт»</div>
+        
+        <p>
+            Бебекин Максим Михайлович является руководителем (директором) организации, осуществляющей 
+            комплексное техническое обслуживание, модернизацию и ремонт лифтового оборудования. Компания функционирует в сфере 
+            жилищно-коммунального хозяйства и промышленного строительства, обеспечивая бесперебойную работу 
+            вертикального транспорта на объектах различного назначения.
+        </p>
+        
+        <a href="https://2gis.ru/barnaul/firm/70000001041396536/tab/reviews?immersive=on" target="_blank">
+            📋 Отзывы о компании
+        </a>
+        
+        <h2>📍 Адрес офиса</h2>
+        <div class="address-block">Советской Армии, 142, Ленинский район, Барнаул</div>
+        
+        <h2>🗺️ Карта Барнаула</h2>
+        
+        <!-- Яндекс.Карты с погодой для Барнаула -->
+        <iframe 
+            class="weather-iframe"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A01a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e2f3g4h5i6j7k8l9m0n1o2p3q4r5s6t7u8v9w&source=constructor">
+        </iframe>
+        <div class="weather-credit">
+            Карта на <a href="https://yandex.ru/pogoda/barnaul" target="_blank">Яндекс.Карта</a>
+        </div>
+    </div>
+</body>
+</html>
